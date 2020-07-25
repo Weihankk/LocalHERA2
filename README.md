@@ -39,3 +39,9 @@ chmod 755 *
 cd .. 
 ```
 Now you are in `/RunHERA` directory
+
+***HERA部署成功***
+
+### 配置参数文件
+
+
