@@ -34,4 +34,8 @@ git clone https://github.com/Weihankk/LocalHERA2.git
 cd LocalHERA2
 cp ../HERA/HERA.zip ./
 unzip HERA.zip
+cd HERA
+chmod 755 *
+cd .. 
 ```
+Now you are in `/RunHERA` directory
