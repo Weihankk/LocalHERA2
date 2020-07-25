@@ -36,12 +36,20 @@ cp ../HERA/HERA.zip ./
 unzip HERA.zip
 cd HERA
 chmod 755 *
-cd .. 
+cp ../../HERA/*fasta ./
+cd ../
 ```
 Now you are in `/RunHERA` directory
 
-***HERA部署成功***
+**HERA部署成功**
 
 ### 配置参数文件
-
-
+- 首先创建一个HERA工作目录
+```
+mkdir HERA_TEST
+```
+- 修改参数文件`LocalHERA_Parameters.R`
+```
+vi LocalHERA_Parameters.R
+```
+- 按照注释内容分别将工作目录/
