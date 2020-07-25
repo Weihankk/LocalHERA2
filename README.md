@@ -52,7 +52,7 @@ mkdir HERA_TEST
 ```
 vi LocalHERA_Parameters.R
 ```
-- 按照注释内容分别将各种数据和工具指定好，此处相比HERA原版只增加了前4行：`set working directory`、`set bwa-0.7.10`
+- 按照注释内容分别将各种数据和工具指定好，此处相比HERA原版只增加了前3行：`set working directory`、`set bwa-0.7.10`、`HERA absolute path`
 
 ### Step 1
 
