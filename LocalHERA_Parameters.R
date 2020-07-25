@@ -61,3 +61,9 @@ Bionano_Scaffolded_Contig="Large_Contig.fasta"
 #the non-scaffold contigs
 Bionano_NonScaffolded_Contig="Small_Contig.fasta"
 ########### end of resetting parameters ##########
+
+# Some functions easy to use #
+Use_Working_Script <- function(x){
+  use.script <- paste0(Working_Script,"/",x)
+  return(use.script)
+}
