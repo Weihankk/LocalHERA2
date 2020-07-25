@@ -13,10 +13,10 @@ Working_Script="/store/whzhang/RunHERA/LocalHERA2/HERA"
 genome_name="Genome"
 
 #the whole genome assembled sequences with absolute path
-genome_seq="/store/whzhang/LocalHERA/Test_Genome.fasta"
+genome_seq="/store/whzhang/RunHERA/LocalHERA2/HERA/Test_Genome.fasta"
 
 #the corrected pacbio file with absolute path
-Corrected_Pacbio="/store/whzhang/LocalHERA/Test_CorrectedPacbio.fasta"
+Corrected_Pacbio="/store/whzhang/RunHERA/LocalHERA2/HERA/Test_CorrectedPacbio.fasta"
 
 #the enzyme used to form the bionano map(if no bionano maps, neglect this parameter)
 Enzyme="GCTCTTC"
