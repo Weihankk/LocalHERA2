@@ -36,6 +36,9 @@ Du, H., & Liang, C. (2019). Assembly of chromosome-scale contigs by efficiently 
 mkdir RunHERA2
 cd RunHERA2
 git clone https://github.com/Weihankk/LocalHERA2.git
+cd LocalHERA2
+vi LocalHERA2_minimap.R  # 修改HERA运行脚本中的软件路径，先将就着用，以后会整合到参数文件中 ...
+
 ```
 Now you are in `/RunHERA2` directory
 
