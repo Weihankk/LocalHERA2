@@ -10,8 +10,7 @@ Use_Working_Script <- function(x){
 }
 
 # args[1]: LocalHERA2_Parameters.R
-#args <- commandArgs(T)
-args <- c("/store/whzhang/LocalHERA2/LocalHERA2_Parameters.R")
+args <- commandArgs(T)
 source(args[1])
 
 print("--------------------------------------------")
