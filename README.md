@@ -1,5 +1,5 @@
 ## 注意
-**LocalHERA2将BWA替换成了minimap2， 速度有了质的提升，但与BWA比对结果的差异还未知，目前BWA还在运行中，根据HERA论文附件说明是完全可以用minimap的。**
+**LocalHERA2将BWA替换成了minimap2， 速度有了质的提升，但与BWA比对结果的差异还未知，目前BWA还未运行完毕，待运行完后我会对比一下BWA和minimap最后结果的差别。根据HERA论文附件说明是完全可以用minimap的。**
 
 **更新日期：2020.12.1**
 
