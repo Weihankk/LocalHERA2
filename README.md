@@ -38,7 +38,8 @@ cd RunHERA2
 git clone https://github.com/Weihankk/LocalHERA2.git
 cd LocalHERA2
 vi LocalHERA2_minimap.R  # 修改HERA运行脚本中的软件路径，先将就着用，以后会整合到参数文件中 ...
-
+# 修改第94行、125行的minimap路径，以及251-261行的dalign路径为自己服务器上的路径即可
+cd ..
 ```
 Now you are in `/RunHERA2` directory
 
@@ -53,8 +54,13 @@ cp ../LocalHERA2/LocalHERA2_Parameters.R ./
 vi LocalHERA2_Parameters.R
 ```
 
-### Step 1
+### Run
+```
+Rscript LocalHERA2_minimap.R LocalHERA2_Parameters.R
+```
 
-
+### 加速
+- `LocalHERA2_Parameters.R` 中`cl <- makeCluster(5)` 表示同时运行5个dalign任务，可以根据自己服务器情况增加，但不得超过单节点的总线程数。
+-  94行和125行minimap2命令中的线程数也可以自行改变
 
 
