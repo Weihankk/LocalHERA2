@@ -1,3 +1,8 @@
+## 注意
+**LocalHERA2将BWA替换成了minimap2， 速度有了质的提升，但与BWA比对结果的差异还未知，目前BWA还在运行中，根据HERA论文附件说明是完全可以用minimap的。**
+
+**更新日期：2020.12.1**
+
 # LocalHERA2
 This is a new respository for running HERA in local environment
 
@@ -20,9 +25,6 @@ Du, H., & Liang, C. (2019). Assembly of chromosome-scale contigs by efficiently 
 
 本人QQ：97578011
 
-## 注意
-** LocalHERA2将BWA替换成了minimap2， 速度有了质的提升，但与BWA比对结果的差异还未知，目前BWA还在运行中，根据HERA论文附件说明是完全可以用minimap的 ***
-** 2020.12.1 **
 
 ## 使用方法
 ### 所需数据
@@ -31,32 +33,22 @@ Du, H., & Liang, C. (2019). Assembly of chromosome-scale contigs by efficiently 
 
 ### 准备
 ```
-mkdir RunHERA
-cd RunHERA
-git clone https://github.com/liangclab/HERA.git
+mkdir RunHERA2
+cd RunHERA2
 git clone https://github.com/Weihankk/LocalHERA2.git
-cd LocalHERA2
-cp ../HERA/HERA.zip ./
-unzip HERA.zip
-cd HERA
-chmod 755 *
-cp ../../HERA/*fasta ./
-cd ../
 ```
-Now you are in `/RunHERA` directory
-
-**HERA部署成功**
+Now you are in `/RunHERA2` directory
 
 ### 配置参数文件
 - 首先创建一个HERA工作目录
 ```
-mkdir HERA_TEST
+mkdir HERA2_TEST
+cp ../LocalHERA2/LocalHERA2_Parameters.R ./
 ```
-- 修改参数文件`LocalHERA_Parameters.R`
+- 修改参数文件`LocalHERA2_Parameters.R`, 主要是工作目录，contig fasta， correct fasta，其他参数没搞懂我也就没变动
 ```
-vi LocalHERA_Parameters.R
+vi LocalHERA2_Parameters.R
 ```
-- 按照注释内容分别将各种数据和工具指定好，此处相比HERA原版只增加了前3行：`set working directory`、`set bwa-0.7.10`、`HERA absolute path`
 
 ### Step 1
 
