@@ -6,11 +6,11 @@ This is a new respository for running HERA in local environment
 Local Highly Efficient Repeat Assembly 2 
 
 ## 项目介绍
-将HERA流程拆分，并使用R重写了本地运行流程脚本，**修改了之前的一些小问题**。
+将HERA流程拆分，并使用R重写了本地运行流程。
 
 HERA项目源地址：https://github.com/liangclab/HERA
 
-LocalHERA源地址（**已弃用**）：https://github.com/Weihankk/LocalHERA
+LocalHERA旧版地址（**已弃用**）：https://github.com/Weihankk/LocalHERA
 
 如果使用本流程请引用HERA原文：
 
@@ -19,6 +19,10 @@ Du, H., & Liang, C. (2019). Assembly of chromosome-scale contigs by efficiently 
 本人邮箱：whzhang@webmail.hzau.edu.cn
 
 本人QQ：97578011
+
+## 注意
+** LocalHERA2将BWA替换成了minimap2， 速度有了质的提升，但与BWA比对结果的差异还未知，目前BWA还在运行中，根据HERA论文附件说明是完全可以用minimap的 ***
+** 2020.12.1 **
 
 ## 使用方法
 ### 所需数据
