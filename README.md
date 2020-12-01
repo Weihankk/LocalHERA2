@@ -54,13 +54,14 @@ cp ../LocalHERA2/LocalHERA2_Parameters.R ./
 vi LocalHERA2_Parameters.R
 ```
 
-### Run
+## Run
 ```
 Rscript LocalHERA2_minimap.R LocalHERA2_Parameters.R
 ```
 
-### 加速
+## 加速
 - `LocalHERA2_Parameters.R` 中`cl <- makeCluster(5)` 表示同时运行5个dalign任务，可以根据自己服务器情况增加，但不得超过单节点的总线程数。
 -  94行和125行minimap2命令中的线程数也可以自行改变
+- 总而言之，LocalHERA2_minimap.R这个脚本和HERA原始shell脚本内容一致，只是将bwa替换为了minimap，同时将pbs任务提交修改为了本地，可以在单节点或者本地电脑运行。 
 
 
