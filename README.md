@@ -56,9 +56,15 @@ vi LocalHERA2_Parameters.R
 
 ## Run
 ```
+# minimap (较快)
 Rscript LocalHERA2_minimap.R LocalHERA2_Parameters.R
+
+# BWA (较慢)
+Rscript LocalHERA2_BWA.R LocalHERA2_Parameters.R
 ```
 
+
+## BWA和minimap结果差异较大，原因未知
 ## 加速
 - `LocalHERA2_Parameters.R` 中`cl <- makeCluster(5)` 表示同时运行5个dalign任务，可以根据自己服务器情况增加，但不得超过单节点的总线程数。
 -  94行和125行minimap2命令中的线程数也可以自行改变
