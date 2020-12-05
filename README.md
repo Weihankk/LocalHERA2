@@ -56,10 +56,10 @@ vi LocalHERA2_Parameters.R
 
 ## Run
 ```
-# minimap (较快)
+# minimap (飞快)
 Rscript LocalHERA2_minimap.R LocalHERA2_Parameters.R
 
-# BWA (较慢)
+# BWA (血慢)
 Rscript LocalHERA2_BWA.R LocalHERA2_Parameters.R
 ```
 
